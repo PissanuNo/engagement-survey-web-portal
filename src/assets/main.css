@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Carnac';
+  src: url('./fonts/Carnac/CarnacRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  text-align: center;
+  font-family: 'Carnac',Arial;
+}
+
+.mainLayout {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+.mainLayout main {
+  flex: 1 0 auto;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
