@@ -2,7 +2,7 @@
   <div class="mainLayout">
     <header>
       <AppHeader />
-      <MenuFrom/>
+      <SideBar/>
     </header>
   </div>
 </template>
