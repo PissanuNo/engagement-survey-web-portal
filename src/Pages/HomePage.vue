@@ -8,7 +8,11 @@
 </template>
 
 <script>
+import SideBar from '../components/HomePage/SideBar.vue';
 export default {
   name: "Menu",
+  components :{
+    SideBar
+  } 
 };
 </script>
