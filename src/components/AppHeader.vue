@@ -27,15 +27,15 @@ import { useRouter } from 'vue-router';
 <style scoped>
   .container-fluid {
     display: flex;
-    justify-content: start;
+    /* justify-content: start; */
     padding: 0 5% 0 5%;
-    height: 100px;
+    height: 50%;
     align-items: center;
     background-color: rgb(99, 219, 97);
   }
 
   .container-fluid img{
-    max-height: 50%;
+    max-height: 80%;
     width: auto;
     cursor: pointer;
   }
