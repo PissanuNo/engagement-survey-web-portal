@@ -1,5 +1,5 @@
 <template>
-  <div class="mainLayout">
+  <div>
     <header>
       <AppHeader />
       <MenuFrom/>
@@ -9,6 +9,6 @@
 
 <script>
 export default {
-  name: "Menu",
+  name: "HopmePage",
 };
 </script>
