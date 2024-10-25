@@ -1,18 +1,20 @@
 <template>
-  <div class="mainLayout">
+  <div>
     <header>
       <AppHeader />
-      <SideBar/>
     </header>
+    <Aside>
+      <SideBar/>
+    </Aside>
+    <footer>
+      <AppFooter />
+    </footer>
   </div>
 </template>
 
 <script>
-import SideBar from '../components/HomePage/SideBar.vue';
+
 export default {
-  name: "Menu",
-  components :{
-    SideBar
-  } 
+  name: "HopmePage",
 };
 </script>
