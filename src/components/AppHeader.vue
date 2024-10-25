@@ -1,43 +1,64 @@
 <template>
-  <header class="container-fluid">
-      <img src="../assets/bakertilly-logo.png" alt="logo" @click="handleChange"/>
-  </header> 
-  <div class="porfile-logo"> 
+  <div class="box-header ">
+    <div class="box-profile">
+      <div class="detail-profile">
+        <h4> 
+          <i class="bi bi-bell-fill icon-noti"></i>
+          <img :src=" imgProfile "  class="img-profile" /> 
+            Austin Robertson 
+          <p class="p">Marketing Administrator</p> 
+        </h4>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import { useRouter } from 'vue-router';
+import { ref } from 'vue';
 
-  export default {
-    name: 'AppHeader',
-    setup() {
-      const router = useRouter();
-
-      const handleChange = () => {
-        router.push('/')
-      };
-      return {
-        handleChange,
-      };
-    },
-  };
+export default {
+  name: 'AppHeader',
+  setup() {
+    const imgProfile = ref('/src/assets/images/TestProfile.png'); // Define the image path
+    
+    return {
+      imgProfile,
+    };
+  },
+};
 </script>
 
 <style scoped>
-  .container-fluid {
-    display: flex;
-    /* justify-content: start; */
-    padding: 0 5% 0 5%;
-    height: 50%;
-    align-items: center;
-    background-color: rgb(99, 219, 97);
-  }
+.box-header {
+  background: rgb(255, 255, 255);
+  height: 76px;
+}
 
-  .container-fluid img{
-    max-height: 80%;
-    width: auto;
-    cursor: pointer;
-  }
+.box-profile {
+  position: absolute;
+  top: 0;
+  right: 1%;
+  height: 70px;
+  width: 300px;
+
+}
+.detail-profile{
+  display: flex;
+  text-align: center;
+  padding-top: 15px;
+} 
+.p {
+  font-size: 16px;
+  padding-left: 4vw;
+}
+.img-profile{
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid black;
+}
+.icon-noti{
+  padding-right: 15px ;
+}
 
 </style>
