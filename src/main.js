@@ -4,7 +4,7 @@ import router from './router';
 //import store from './store';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
-import './assets/main.css';
+import './assets/main.scss';
 import GlobalComponents from './globalComponents';
 //import GlobalDirectives from './globalDirectives';
 // import Notifications from './components/NotificationPlugin';

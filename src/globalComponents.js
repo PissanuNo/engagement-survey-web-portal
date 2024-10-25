@@ -1,10 +1,10 @@
 import AppHeader from './components/AppHeader.vue';
-import MenuFrom from './components/MenuFrom.vue';
+import SideBar from './components/HomePage/SideBar.vue';
 
 const GlobalComponents = {
   install(Vue) {
     Vue.component('AppHeader', AppHeader);
-    Vue.component('MenuFrom', MenuFrom);
+    Vue.component('SideBar', SideBar);
   },
 };
 

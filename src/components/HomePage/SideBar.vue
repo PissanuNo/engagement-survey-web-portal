@@ -5,7 +5,7 @@
       <div :class="['sidebar', { close: sidebarClosed }]">
         <div class="logo-details">
           <i class="bi bi-list" @click="toggleMenu"></i>
-          <span class="logo_name">Survey Menu</span>
+          <span class="logo_name">Survey Menu </span>
         </div>
         <hr>
         <ul class="nav-links">
@@ -94,6 +94,8 @@
     color: #fff;
     text-decoration: none;
   }
+
+  
   
   .sidebar {
     position: fixed;

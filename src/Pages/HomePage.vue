@@ -2,7 +2,7 @@
   <div>
     <header>
       <AppHeader />
-      <MenuFrom/>
+      <SideBar/>
     </header>
   </div>
 </template>
@@ -12,3 +12,7 @@ export default {
   name: "HopmePage",
 };
 </script>
+
+<style scoped>
+
+</style>
