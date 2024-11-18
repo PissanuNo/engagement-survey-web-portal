@@ -30,8 +30,12 @@ export default {
 
 <style scoped>
 .box-header {
+  position: fixed;
+  top: 0;
+  right: 0;
   background: rgb(255, 255, 255);
   height: 76px;
+  width: 1414px;
 }
 
 .box-profile {
