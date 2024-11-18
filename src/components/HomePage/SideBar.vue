@@ -3,10 +3,9 @@
     <div class="sidebar-header">
       <img src="/src/assets/images/bakertilly-logo.png" alt="Bakertilly" class="img-btcas" v-if="!isCollapsed" />
       <i 
-        :class="['bi', isCollapsed ? 'bi bi-list' : 'bi-arrow-left-circle-fill']" 
-        class="toggle-icon"
+        :class="['bi', isCollapsed ? 'bi bi-list list-icon' : 'bi-arrow-left-circle-fill arrow-icon']" 
         @click="toggleSidebar"
-      ></i>
+        ></i>
     </div>
     <div class="item-sidebar">
       <h5 v-if="!isCollapsed">Home</h5>
@@ -94,7 +93,13 @@ export default {
   margin-bottom: 20px; 
 }
 
-.toggle-icon {
+.list-icon {
+  font-size: 28px;
+  cursor: pointer;
+  margin-left: 0;
+  color:#000000;
+}
+.arrow-icon {
   font-size: 28px;
   cursor: pointer;
   margin-left: 0;
