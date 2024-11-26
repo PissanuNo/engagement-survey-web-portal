@@ -5,7 +5,7 @@
         <h4> 
           <i class="bi bi-bell-fill icon-noti"></i>
           <img :src=" imgProfile "  class="img-profile" /> 
-            Austin Robertson 
+            Austin Robertson
           <p class="p">Marketing Administrator</p> 
         </h4>
       </div>
