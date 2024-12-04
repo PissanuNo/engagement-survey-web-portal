@@ -15,6 +15,6 @@
 <script>
 
 export default {
-  name: "HopmePage",
+  // name: "HopmePage",
 };
 </script>
