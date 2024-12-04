@@ -6,6 +6,9 @@
     <Aside>
       <SideBar/>
     </Aside>
+    <!-- <section>
+        <TestSec1 />
+    </section> -->
     <footer>
       <AppFooter />
     </footer>
@@ -13,8 +16,12 @@
 </template>
 
 <script>
+import TestSec1 from '../components/test/TestSec1.vue';
 
 export default {
-  // name: "HopmePage",
+  name: "HopmePage",
+  component: {
+    TestSec1
+  },
 };
 </script>
