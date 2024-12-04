@@ -69,6 +69,7 @@ export default {
 
 <style scoped>
 .box-sidebar {
+  position: absolute;
   width: 250px; 
   background-color: #ffffff; 
   padding: 20px; 
@@ -78,6 +79,7 @@ export default {
   height: 100vh; 
   transition: width 0.5s ease, padding 0.5s ease; 
   overflow: hidden;
+  z-index: 10;
 }
 
 .collapsed {

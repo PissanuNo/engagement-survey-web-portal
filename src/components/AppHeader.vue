@@ -2,12 +2,13 @@
   <div class="box-header ">
     <div class="box-profile">
       <div class="detail-profile">
-        <h4> 
-          <i class="bi bi-bell-fill icon-noti"></i>
+          <!-- <i class="bi bi-bell-fill icon-noti"></i> -->
+          <img :src=" imgNoti "  class="icon-noti" />
           <img :src=" imgProfile "  class="img-profile" /> 
-            Austin Robertson
-          <p class="p">Marketing Administrator</p> 
-        </h4>
+          <div>
+            <p class="name-p">Austin Robertson</p>
+            <p class="job-p">Marketing Administrator</p>
+          </div> 
       </div>
     </div>
   </div>
@@ -20,9 +21,10 @@ export default {
   name: 'AppHeader',
   setup() {
     const imgProfile = ref('/src/assets/images/TestProfile.png'); // Define the image path
-    
+    const imgNoti = ref('/src/assets/images/noti-icon.png');
     return {
       imgProfile,
+      imgNoti,
     };
   },
 };
@@ -35,7 +37,7 @@ export default {
   right: 0;
   background: rgb(255, 255, 255);
   height: 76px;
-  width: 1414px;
+  width: 100%;
 }
 
 .box-profile {
@@ -51,18 +53,27 @@ export default {
   text-align: center;
   padding-top: 15px;
 } 
-.p {
-  font-size: 16px;
-  padding-left: 4vw;
+.name-p {
+  margin: 0;
+  font-size: 20px;
+  padding-left: 15px;
+}
+.job-p {
+  color: gray;
+  font-size: 14px;
+  padding-left: 15px;
+  margin: 0;
 }
 .img-profile{
   width: 50px;
   height: 50px;
   border-radius: 30px;
-  border: 1px solid black;
+  border: 1px solid gray;
 }
 .icon-noti{
-  padding-right: 15px ;
+  width: 53px;
+  height: 55px;
+  padding: 15px ;
 }
 
 </style>
