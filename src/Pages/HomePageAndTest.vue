@@ -1,30 +1,28 @@
 <template>
-    <div class="sort">
-        <header>
-            <!-- <AppHeader/> -->
-        </header>
-        <aside>
-            <!-- <SideBar/> -->
-        </aside>
-    </div>
     <div>
-        <TestSec1 />
-    </div>
+        <section>
+            <Background/>
+            <Signin/>
+            <Modal/>
+        </section>
+  </div>
+
 </template>
 
 <script>
-import TestSec1 from '../components/test/TestSec1.vue';
-
+import Background from '../components/globalComponents/Background.vue';
+import Signin from '../components/SignIn/Signin.vue';
+import Modal from '../components/Modal/Modal.vue';
 export default {
     name: 'HomePageAndTest',
-    component: {
-        TestSec1
+    components: {
+        Background,
+        Signin,
+        Modal,
     },
 }
 </script>
 
 <style scoped>
-/* .sort{
-    display: flex;
-}     */
+
 </style>
