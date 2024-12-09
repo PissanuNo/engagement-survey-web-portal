@@ -1,4 +1,5 @@
 <template>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <div class="boxcomponent">
     <div class="boxsignin">
       <h1><strong style="font-family: CarnacBold">Sign In</strong></h1>
