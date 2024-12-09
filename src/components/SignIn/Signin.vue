@@ -220,7 +220,7 @@ input {
   width: 35%;
   margin-top: 20px;
   padding-bottom: 5px;
-  cursor-even: ;
+  cursor-even: none;
 }
 
 @media screen and (max-width: 768px) {
